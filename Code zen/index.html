@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="assets\about 1.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <script src="https://kit.fontawesome.com/337c394ef7.js" crossorigin="anonymous"></script>
+  <title>CodeZen</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <a href="/">
+      <h1>CAPTIVATORS</h1>
+    </a>
+    <ul class="navigation">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About Us</a></li>
+      <li><a href="#Events" class="nav-link">Events</a></li>
+    </ul>
+
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+
+  </nav>
+  <!--HeroImage-->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>CODEZEN</h1>
+      <p>Captivate, what you wished existed!</p>
+      <a href="https://captivators.vercel.app/"><button>Join Us</button></a>
+    </div>
+  </div>
+
+
+
+  <!-- About Us  -->
+  <div class="section" id="about">
+    <div class="container">
+      <div class="content-section">
+        <div class="title">
+          <h1>About Us</h1>
+        </div>
+        <div class="content">
+          <h3>Coding Club Of CSIT !</h3>
+          <p>Coding is the process of transforming ideas, solutions and instructions into the language that computer can understand.<br>
+            Coding club helps members gain in depth knowledge of coding.<br>
+            It is a platform where students with different interests such as coding, app development, machine learning and web designing come up to enhance their knowledge.</p>
+        </div>
+        
+      </div>
+      <div class="image-section">
+        <img src="assets\main.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  
+</body>
+
+<script src="script.js"></script>
+<!-- Ion icons scripts -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+  const fileInput = document.getElementById('file-input');
+
+  const burger = document.querySelector("#burger-menu");
+  const ul = document.querySelector("nav ul");
+  const nav = document.querySelector("nav");
+  burger.addEventListener("click", () => {
+    ul.classList.toggle("show");
+  });
+  // Select nav links
+  const navLink = document.querySelectorAll(".nav-link");
+
+  navLink.forEach((link) =>
+    link.addEventListener("click", () => {
+      ul.classList.remove("show");
+    })
+  );
+</script>
+
+<!--Cards-->
+<center>
+  <h2 class="projectstitle" id="projects"> Recent Events</h2>
+</center>
+<section class="projcards" id="projcards">
+  <ul>
+    <li>
+      <figure>
+        <img
+          src="assets\event.jpg"
+          alt="Several hands holding beer glasses" width=1170 height=500>
+        <figcaption>
+          <h3>The Introductory Webathon</h3>
+        </figcaption>
+      </figure>
+      <p>
+        I  am elated to share that we (CodeZen) by Captivators are organizing the Introductory Webathon a chance for you to apply your knowledge and
+         skills to build something meaningful that'll help you showcase your skills to your peers, teachers, and potential employers.!
+      </p>
+      <a href="https://codezen-webathon.devpost.com/">Registration Link</a>
+    </li>
+    <li>
+      <figure>
+        <img
+          src="assets\event.jpg"
+          alt="Several friends doing a toast" width=1170 height=500>
+        <figcaption>
+          <h3>The Introductory Webathon</h3>
+        </figcaption>
+      </figure>
+      <p>
+                I  am elated to share that we (CodeZen) by Captivators are organizing the Introductory Webathon a chance for you to apply your knowledge and
+                 skills to build something meaningful that'll help you showcase your skills to your peers, teachers, and potential employers.!
+
+      </p>
+      <a href="https://codezen-webathon.devpost.com/">Registration Link</a>
+    </li>
+    <li>
+      <figure>
+        <img
+          src="assets\event.jpg"
+          alt="Three different glasses of beer" width=1170 height=500>
+        <figcaption>
+          <h3>The Introductory Webathon</h3>
+        </figcaption>
+      </figure>
+      <p>
+        I  am elated to share that we (CodeZen) by Captivators are organizing the Introductory Webathon a chance for you to apply your knowledge and
+         skills to build something meaningful that'll help you showcase your skills to your peers, teachers, and potential employers.!
+.
+      </p>
+      <a href="https://codezen-webathon.devpost.com/">Registration Link</a>
+    </li>
+  </ul>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container1">
+    <div class="row">
+      <div class="footer-col">
+        <h4>CODEZEN <div class="underline"><span></span></div>
+        </h4>
+        <p>
+          Coding Club CODEZEN is a coding community of MJP Rohilkhand University for students who are interested
+          in coding, development.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Links<div class="underline"><span></span></h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Recent Events</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newletter<div class="underline"><span></span></h4>
+        <form>
+          <i class="far fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required>
+          <button type="submit"><i class="fas fa-arrow-right"></i></button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us<div class="underline"><span></span></h4>
+        <div class="social-links">
+          <a onclick="facebook()" href="https://www.facebook.com/profile.php?id=100085247440991" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/captivators_csit?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/captivators-csit-club-380b2324a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+      <div class="container ">
+      <div class="copyright">
+        &copy; Copyright <strong><span>CAPTIVATORS</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.linkedin.com/in/shakti12/">Shakti Singh</a>
+      </div>
+    </div>
+    </div>
+  </div>
+</footer>
+</body>
+<script src="script.js"></script>
+
+</html>
